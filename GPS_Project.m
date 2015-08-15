@@ -37,9 +37,10 @@ v_bar = mean(sigma_1.*randn(4,m(1)),2);
 y_bar = h + v_bar;
 b_hat = 0;
 
-%Gradient Descent Algorithm
 
-%{
+%General Gradient Descent Algorithm
+
+
 for i = 1:100000;
 
 X_j = ([S_hat', b_hat]');
@@ -78,9 +79,10 @@ plot(displacement,i)
 title('Gradient Descent Graph with sigma = 0');
 xlabel('number of iterations');
 ylabel('Displacement between (S_hat) and (S) in meters');
-%}
 
-%Gauss-Newton Algorithm
+
+%Gauss-Newton Gradient Descent Algorithm
+
 
 
 for i = 1:4;
